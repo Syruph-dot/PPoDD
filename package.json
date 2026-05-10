@@ -1,0 +1,35 @@
+{
+  "name": "aircraft-battle",
+  "version": "1.0.0",
+  "description": "人机对战飞机大战游戏",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "headless": "tsx scripts/headless-runner.ts",
+    "ai:train": "python scripts/train_ai_full.py",
+    "evolve": "tsx scripts/evolution-batch.ts",
+    "policy:smoke": "tsx scripts/policy-smoke.ts",
+    "policy:native-smoke": "tsx scripts/policy-native-smoke.ts",
+    "trainer:start": "node tools/trainer-server.js"
+  },
+  "keywords": [
+    "game",
+    "aircraft",
+    "battle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "onnxruntime-web": "^1.24.3"
+  }
+}

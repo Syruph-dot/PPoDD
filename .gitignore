@@ -1,0 +1,70 @@
+# Node
+node_modules/
+.pnp.*
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+public/build/
+.vite/
+.esbuild/
+
+# Vite / dev
+.env
+.env.local
+.env.*.local
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+logs/
+
+# Coverage
+coverage/
+coverage/**
+
+# Caches and temp
+.cache/
+.temp/
+tmp/
+
+# Editor/IDE
+.vscode/
+.idea/
+.history/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+*.map
+
+# Python (if present)
+venv/
+__pycache__/
+
+# Ignore local sensitive files
+*.secret
+
+# keep lockfiles (pnpm-lock.yaml) committed
+
+# Training outputs (generated)
+training-output/
+bc-dataset/
+bc-model/
+evolution-output/
+# Optional model artifacts (uncomment to ignore)
+# *.pt
+# *.onnx
+# policy.json
+
